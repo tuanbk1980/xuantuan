@@ -1,0 +1,138 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #0062cc;
+    display:flex;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.menu li{
+    list-style-type: none;
+    text-align: left;
+}
+
+
+    
+.menu li a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    padding: 13px 23px;
+}
+
+.menu-sub{
+    display:none;
+}
+
+
+.space{
+    width: 100%;
+    height: 50px;
+}
+
+
+.menu li:nth-of-type(2):hover .menu-sub{
+    display: block;
+    background-color: #0062cc;
+}
+
+.menu li:hover{
+   background-color: gray; 
+} 
+
+
+.canh-dong-ca-rot-title{
+    padding: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Sansita Swashed', cursive;
+
+}
+
+.canh-dong-ca-rot-item{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Sansita Swashed', cursive;
+
+}
+
+.canh-dong-ca-rot-title-header{
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.canh-dong-ca-rot-title-header-sub{
+    padding: 0px 0px;
+}
+
+
+
+.canh-dong-ca-rot-item{
+    padding: 0% 100px; 
+    /* border: solid 1px rgba(0, 0, 0, 0.2); */
+    
+    margin: 5%;
+}
+
+.canh-dong-ca-rot-item img{
+    width: 100%;
+    box-shadow: 2px 3px 4px 3px rgba(0, 0,0,0.5);
+}
+
+
+
+.mobile {
+    display: none;
+}
+
+/* for mobile */
+@media only screen and (max-width:768px){
+   .canh-dong-ca-rot-title {
+        display: none;
+    }
+    .destop-tablets{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+
+    .canh-dong-ca-rot-item{
+        padding:10px;
+        margin: 5%;
+    }
+
+}
+
+/* for tablets*/
+@media only screen and (min-width:769px) and (max-width:991px){
+    .canh-dong-ca-rot-title{
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+
+    .canh-dong-ca-rot-item{
+        padding: 0 10px;
+        margin: 5%;
+    }
+
+}
